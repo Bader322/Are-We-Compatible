@@ -1,0 +1,77 @@
+html {
+  height: 100%;
+}
+
+/* header  nav */
+
+header ul {
+  display: flex;
+  list-style-type: none;
+  margin: 50px 100px;
+  font: 17px helvetica;
+  text-align: center;
+}
+/*Giving our li a background and height-space*/
+header li {
+  flex: 1;
+  height: 66px;
+  background: #1a1a1a;
+}
+/*Making the li's inside of our navbar interactive with color change and padding/margin*/
+header li:hover {
+  flex: 1.1;
+  transition: all 0.2s ease;
+  background: #333333;
+}
+/*Styling and sizing our link/letters while giving them a block-level, 'click' ability*/
+header a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  padding: 23px;
+}
+header a:hover {
+  color: tan;
+}
+/*Giving the middle, border-lines a color and size*/
+header .navigation li a {
+  text-transform: uppercase;
+}
+
+/* end of header nav */
+
+.formWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 250px;
+}
+.resForm {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100%;
+}
+.resultData {
+  display: flex;
+  justify-content: center;
+}
+.resultData > table {
+  width: 86.1%;
+}
+@media screen and (max-width: 600px) {
+  .table-dark {
+    display: flex;
+  }
+  .table-dark thead,
+  .table-dark tbody {
+    width: 50%;
+  }
+  .table-dark thead tr,
+  .table-dark tbody tr {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,45 @@
+<%- include('./layout/header.ejs') %>
+<div class="formWrapper">
+  <form class="resForm" method="POST" action="/">
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control"
+        aria-describedby="emailHelp"
+        placeholder="First Partner"
+        name="firstPartner"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Second Partner"
+        name="secondPartner"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Get Results!</button>
+  </form>
+</div>
+<% if (locals.resultData) { %>
+<div class="resultData">
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th>First Partner</th>
+        <th>Second Partner</th>
+        <th>Percentage</th>
+        <th>Result</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th><%= resultData.fname %></th>
+        <td><%= resultData.sname %></td>
+        <td><%= resultData.percentage %></td>
+        <td><%= resultData.result %></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<% } %> <%- include('./layout/footer.ejs') %>
