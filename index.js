@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const axios = require("axios");
-
+const port = process.env.PORT || 3000;
 //Import the mongoose module
 //Set up default mongoose connection
 
@@ -44,5 +44,5 @@ app.post("/", async (req, res) => {
   }
 });
 
-app.listen(8080);
-console.log("Server is listening on port 8080");
+app.listen(port);
+console.log(`Server is listening on port ${port}`);
