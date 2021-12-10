@@ -1,5 +1,29 @@
 
 </div>
+  <div class="cContainer">
+    <div class="CopyrightWrapper">
+      <div class="copyright-container">
+        <script>
+          let curDate = document.createTextNode(new Date().getFullYear());
+          document.getElementById("copyright").innerHTML =
+            new Date().getFullYear();
+        </script>
+      </div>
+      <div id="bold-branding">
+        <a
+          href="https://baldandbold.ca/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://dev.baldandbold.ca/wp-content/uploads/2021/10/BB_logo_final-white.png"
+          />
+        </a>
+        ©   <span id="copyright"></span> All rights reserved
+      </div>
+    </div>
+  </div>
+
 
 </body>
 </html>

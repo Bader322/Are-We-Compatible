@@ -37,7 +37,6 @@ app.post("/", async (req, res) => {
   try {
     const reqRes = await axios.request(options);
     const resultData = reqRes.data;
-    console.log(resultData);
     res.render("index", { resultData: resultData });
   } catch (error) {
     res.render("index", { error: error });

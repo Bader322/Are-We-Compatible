@@ -22,7 +22,7 @@
   </form>
 </div>
 <% if (locals.resultData) { %>
-<div class="resultData">
+<div class="resultDataTable">
   <table class="table table-dark">
     <thead>
       <tr>
@@ -34,12 +34,38 @@
     </thead>
     <tbody>
       <tr>
-        <th><%= resultData.fname %></th>
-        <td><%= resultData.sname %></td>
-        <td><%= resultData.percentage %></td>
+        <td class="resCell"><%= resultData.fname %></td>
+        <td class="resCell"><%= resultData.sname %></td>
+        <td class="resCell"><%= resultData.percentage %></td>
         <td><%= resultData.result %></td>
       </tr>
     </tbody>
   </table>
 </div>
-<% } %> <%- include('./layout/footer.ejs') %>
+
+
+<div class="resultDataTableM">
+  <table class="table table-dark">
+    <tbody>
+      <tr>
+        <th>First Partner</th>
+        <td class=""><%= resultData.fname %></td>
+        <th>Second Partner</th>
+        <td class=""><%= resultData.sname %></td>
+        <th>Percentage</th>
+        <td class=""><%= resultData.percentage %></td>
+        <th>Result</th>
+        <td><%= resultData.result %></td>
+      </tr>
+      <tr>
+        
+        
+        
+        
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<% } %> 
+<%- include('./layout/footer.ejs') %>
