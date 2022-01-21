@@ -129,4 +129,7 @@ header .navigation li a {
 .cContainer {
   background: #333;
   padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
