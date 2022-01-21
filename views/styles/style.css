@@ -108,7 +108,6 @@ header .navigation li a {
   white-space: nowrap;
   color: white;
   display: flex;
-  font-family: GothamPro-Med;
   align-items: center;
   gap: 2%;
   width: 265px;
